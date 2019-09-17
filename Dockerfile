@@ -5,5 +5,5 @@ RUN apt-get install chkconfig -y
 RUN apt-get remove docker docker-engine docker.io
 RUN apt-get install docker.io -y
 RUN service docker start
-RUN chkconfig enable docker
+RUN chkconfig docker on
 RUN docker --version
