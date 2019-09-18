@@ -4,4 +4,3 @@ RUN apt-get install systemd -y
 RUN apt-get remove docker docker-engine docker.io
 RUN apt-get install docker.io -y
 RUN service docker start
-CMD ['bash']
